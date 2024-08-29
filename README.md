@@ -37,11 +37,54 @@ Phishing Email <br/>
 -SPF does not match google mail server.<br />
 -DKIM is signed by yandex.ru, a Russian email domain not Google.<br />
 -Email assumes use of a mobile device, whilst im on a laptop.
-
 <img src="https://i.imgur.com/IDZ9KEm.png" height="80%" width="80%" alt="PhishinEmail"/>
 <br />
 <br />
-Inside Honeynet Virtual Machine, Disabled Firewalls:  <br/>
-<img src="https://i.imgur.com/hHjsiXE.png" height="80%" width="80%" alt="2. Windows firewall Virtual Machine"/>
+Hovering over embedded link:  <br/>
+-The phishing link uses Google Storage APIs which is designed to exploit the trust and legitimacy associated with Google services
+<img src="https://i.imgur.com/L4j0HAz.pngg" height="80%" width="80%" alt="link"/>
+<br />
+<br />
+Accessing email headers: <br/>
+<img src="https://i.imgur.com/DrSuoe4.png" height="80%" width="80%" alt="Headers"/>
+<br />
+<br />
+Analysing headers through MXtoolbox: <br/>
+-DMARC Non-Compliance: The email fails to comply with DMARC (Domain-based Message Authentication, Reporting, and Conformance), indicating it was likely not sent from an authorized source for the domain it claims to represent.<br/>
+-SPF Misalignment: The email's SPF (Sender Policy Framework) record does not align, meaning the sending IP address is not authorized to send emails on behalf of the claimed domain.<br/>
+-DKIM Authentication Failure: The email lacks DKIM (DomainKeys Identified Mail) authentication, suggesting the message was not properly signed by the domain, further pointing to possible spoofing or forgery.<br/>
+<img src="https://i.imgur.com/4QjZx5F.png" height="80%" width="80%" alt="mx1"/>
+<br />
+<br />
+IP address is blacklisted:  <br/>
+-The IP address has been flagged for sending spam, phishing, or other malicious emails, and is listed on one or more public email blacklists
+<img src="https://i.imgur.com/q1NDIve.png" height="80%" width="80%" alt="mx2"/>
+<br />
+<br />
+IP geo-locator:  <br/>
+-Further investigation of the IP address from the email on IP geo-locator shows country of origin
+<img src="https://i.imgur.com/0yFnD2C.png" height="80%" width="80%" alt="ip"/>
+<br />
+<br />
+Safely accessing embedded link through browserling sandbox:  <br/>
+-The phishing site is blocking access from certain IP addresses, including those used by Browserling, to avoid detection and analysis.
+<img src="https://i.imgur.com/eS8nGLm.png" height="80%" width="80%" alt="browser"/>
+<br />
+<br />
+Analyzing phishing URL through URLscan.io:  <br/>
+-The phishing URL contacted 6 IP addresses across 3 countries and 7 domains, indicating an effort to distribute its operations across multiple servers, potentially to evade detection and enhance resilience against takedowns.<br/>
+-The website performed 31 HTTP transactions, suggesting it is actively communicating with various resources, possibly to load malicious content, track user interactions, or gather data.<br/>
+-Google Safe Browsing flagged the site as malicious, confirming that reputable security services have identified the URL as a threat, reinforcing the need to avoid interaction.<br/>
+<img src="https://i.imgur.com/EJsBw42.pngg" height="80%" width="80%" alt="url1"/>
+<br />
+<br />
+Viewing redirect chain from the initial embedded link on URLscan.io:  <br/>
+-The different landing page observed on URLScan.io, along with the redirection through 7 domains, indicates that the phishing campaign is using a redirection chain to obfuscate its final destination. This tactic enhances the attacker's ability to deceive users and security systems, increasing the chances of a successful phishing attempt
+<img src="https://i.imgur.com/r0NG69g.png" height="80%" width="80%" alt="url2"/>
+<br />
+<br />
+Screenshot taken from URLscan.io of the embedded links final landing page: <br/>
+-The screenshot taken of the final landing page uses fear-inducing language to create a sense of urgency to take immediate action with a large green "ACTIVATE" button to prompt the user to act quickly, where the attacker will direct victim to install malware or submit personal information.
+<img src="https://i.imgur.com/iabQIq4.png" height="80%" width="80%" alt="url3"/>
 <br />
 <br />
