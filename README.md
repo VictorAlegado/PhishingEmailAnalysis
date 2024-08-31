@@ -48,8 +48,6 @@ To assess the authenticity of the email, I examined the sender details, subject 
 <h2>Phishing Email Analysis walk-through:</h2>
 <br/>
 <p align="center">
-<br/>
-<br/>
 Authentic Google Email Reference<br/>
 <img src="https://i.imgur.com/WvPeCDH.png" height="80%" width="80%" alt="Real"/>
 <br />
