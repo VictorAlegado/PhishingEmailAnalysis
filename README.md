@@ -64,7 +64,7 @@ Authentic Google Email Reference<br/>
 <br />
 <br />
 <b>Hovering over embedded link:</b>  <br/>
--The phishing link uses Google Storage APIs which is designed to exploit the trust and legitimacy associated with Google services
+-The phishing link uses Google Storage APIs which is designed to exploit the trust and legitimacy associated with Google services<br />
 <img src="https://i.imgur.com/L4j0HAz.pngg" height="80%" width="80%" alt="link"/>
 <br />
 <br />
@@ -80,17 +80,17 @@ Authentic Google Email Reference<br/>
 <br />
 <br />
 <b>IP address is blacklisted:</b>  <br/>
--The IP address has been flagged for sending spam, phishing, or other malicious emails, and is listed on one or more public email blacklists
+-The IP address has been flagged for sending spam, phishing, or other malicious emails, and is listed on one or more public email blacklists<br />
 <img src="https://i.imgur.com/q1NDIve.png" height="80%" width="80%" alt="mx2"/>
 <br />
 <br />
 <b>IP Geo-Locator:</b>  <br/>
--Further investigation of the IP address from the email on IP geo-locator shows country of origin
+-Further investigation of the IP address from the email on IP geo-locator shows country of origin<br />
 <img src="https://i.imgur.com/0yFnD2C.png" height="80%" width="80%" alt="ip"/>
 <br />
 <br />
 <b>Safely accessing embedded link through Browserling sandbox:</b>  <br/>
--The phishing site is blocking access from certain IP addresses, including those used by Browserling, to avoid detection and analysis.
+-The phishing site is blocking access from certain IP addresses, including those used by Browserling, to avoid detection and analysis.<br />
 <img src="https://i.imgur.com/eS8nGLm.png" height="80%" width="80%" alt="browser"/>
 <br />
 <br />
