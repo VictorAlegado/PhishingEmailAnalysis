@@ -22,7 +22,7 @@ To assess the authenticity of the email, I examined the sender details, subject 
 - The URL uses redirection through 7 domains to obscure the final malicious site.<br/>
 - The IP address associated with the email is blacklisted for malicious activity.<br/>
 <b>3. Malicious Website Activity:</b><br/>
-- The phishing URL contacted 6 IPs across 3 countries, showing distributed operations.<br/>
+- The phishing URL contacted 6 IPs across 3 countries, showing distributed operations and redirect chain<br/>
 - 31 HTTP transactions were made, indicating active communication and potential data gathering.<br/>
 - Google Safe Browsing flagged the site as malicious.<br/>
 <b>4. Landing Page Analysis:</b><br/>
