@@ -105,7 +105,7 @@ Authentic Google Email Reference<br/>
 <br />
 <br />
 <b>Screenshot taken from URLscan.io of the embedded links final landing page:</b> <br/>
--The screenshot taken of the final landing page uses fear-inducing language to create a sense of urgency to take immediate action with a large green "ACTIVATE" button to prompt the user to act quickly, where the attacker will direct victim to install malware or submit personal information.<br/>
+-The screenshot taken of the final landing page shows no association with Google and uses fear-inducing language to create a sense of urgency to take immediate action with a large green "ACTIVATE" button to prompt the user to act quickly, where the attacker will direct victim to install malware or submit personal information.<br/>
 <img src="https://i.imgur.com/iabQIq4.png" height="80%" width="80%" alt="url3"/>
 <br />
 <br />
